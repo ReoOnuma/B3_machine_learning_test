@@ -19,3 +19,8 @@ data_train, data_test, target_train, target_test = train_test_split(iris.data, i
 # define neural network model
 clf = MLPClassifier(hidden_layer_sizes=10, activation='relu', solver='adam', max_iter=1000)
 
+# learing model
+clf.fit(data_train, target_train)
+# calculate prediction accuracy
+print(clf.score(data_train, target_train))
+
