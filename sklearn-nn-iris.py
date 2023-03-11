@@ -27,3 +27,11 @@ print(clf.score(data_train, target_train))
 # predict test data
 print(clf.predict(data_test))
 print(target_test)
+
+# show loss curve
+plt.plot(clf.loss_curve_)
+plt.title("loss_curve")
+plt.xlabel("Iteration")
+plt.ylabel("Loss")
+plt.grid()
+plt.show()
