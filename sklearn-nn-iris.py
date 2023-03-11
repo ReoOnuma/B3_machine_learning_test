@@ -24,3 +24,6 @@ clf.fit(data_train, target_train)
 # calculate prediction accuracy
 print(clf.score(data_train, target_train))
 
+# predict test data
+print(clf.predict(data_test))
+print(target_test)
